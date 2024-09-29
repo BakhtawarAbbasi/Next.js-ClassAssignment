@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a simple, modern font */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  background-color: lightcyan;
+  color: #333;
+ 
+}
+
+/* Center the content and apply responsive padding */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #4A4A8E; /* Dark purple/navy color */
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Modern Button Style */
+nav button {
+  background-color: #0e7ff0; /* Lighter purple/navy */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+  background-color: #1ba6e2;
+  transform: scale(1.05);
+}
+
+/* Add some basic spacing */
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: center;
+  color: #398feb; /* Same color as navbar */
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #398feb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
