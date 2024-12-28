@@ -1,9 +1,7 @@
-'use client'; // Ensure this component can use client-side hooks
-
-import { useRouter } from 'next/navigation';
-
+"use client"; // Ensure this component can use client-side hooks
+import {useRouter} from 'next/navigation';
 const Navbar = () => {
-  const router = useRouter();
+const router = useRouter();
 
   const navigate = (route: string) => {
     router.push(route); // Use push for navigation
@@ -20,5 +18,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
