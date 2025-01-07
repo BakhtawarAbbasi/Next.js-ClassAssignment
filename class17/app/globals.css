@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Reset and Body Styling */
+body {
+  font-family: 'Inter', sans-serif; /* Use a clean, modern font */
+  color: rgb(var(--background-start-rgb, 33, 37, 41)); /* Fallback color added */
+  background: rgba(224, 224, 247, 0.9); /* Slightly adjusted opacity for better readability */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll issues */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px;
+  font-weight: bold;
+  color: rgb(0, 26, 102); /* A consistent, professional heading color */
+}
+
+h1 {
+  font-size: 2rem; /* Relative units for better responsiveness */
+}
+
+/* Input and Select Fields */
+input,
+select {
+  width: 100%; /* Full-width for better responsiveness */
+  max-width: 400px; /* Limit the width */
+  background-color: rgba(0, 26, 255, 0.1);
+  border: 1px solid rgb(21, 0, 255);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px 0;
+  outline: none;
+  font-size: 1rem;
+  color: rgb(33, 37, 41); /* Neutral text color */
+  transition: all 0.3s ease; /* Smooth interaction effects */
+}
+
+input:focus,
+select:focus {
+  border-color: rgb(0, 102, 255);
+  box-shadow: 0 0 5px rgba(0, 102, 255, 0.5);
+}
+
+input::placeholder,
+select::placeholder {
+  color: rgb(117, 117, 117); /* Softer placeholder color */
+  text-align: center;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: rgba(0, 26, 255, 0.8);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: rgba(0, 26, 255, 0.6);
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visual appeal */
+}
+
+/* Error Messages */
+.error-message {
+  color: rgb(238, 80, 80);
+  font-size: 0.875rem; /* Slightly larger for readability */
+  margin-left: 10px;
+  font-style: italic; /* Emphasize the error message */
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input,
+  select {
+    max-width: 100%; /* Ensure inputs fit smaller screens */
+  }
+
+  .submit-button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
