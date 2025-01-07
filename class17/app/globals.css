@@ -2,33 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-/* General Reset and Body Styling */
 body {
-  font-family: 'Inter', sans-serif; /* Use a clean, modern font */
-  color: rgb(var(--background-start-rgb, 33, 37, 41)); /* Fallback color added */
-  background: rgba(224, 224, 247, 0.9); /* Slightly adjusted opacity for better readability */
+  font-family: 'Inter', sans-serif; 
+  color: rgb(var(--background-start-rgb, 33, 37, 41)); 
+  background: rgba(224, 224, 247, 0.9); 
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  overflow-x: hidden; /* Prevent horizontal scroll issues */
+  overflow-x: hidden; 
 }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px;
   font-weight: bold;
-  color: rgb(0, 26, 102); /* A consistent, professional heading color */
+  color: rgb(0, 26, 102); 
 }
 
 h1 {
-  font-size: 2rem; /* Relative units for better responsiveness */
+  font-size: 2rem; 
 }
 
-/* Input and Select Fields */
 input,
 select {
-  width: 100%; /* Full-width for better responsiveness */
-  max-width: 400px; /* Limit the width */
+  width: 100%; 
+  max-width: 400px;
   background-color: rgba(0, 26, 255, 0.1);
   border: 1px solid rgb(21, 0, 255);
   border-radius: 8px;
@@ -36,8 +34,8 @@ select {
   margin: 5px 0;
   outline: none;
   font-size: 1rem;
-  color: rgb(33, 37, 41); /* Neutral text color */
-  transition: all 0.3s ease; /* Smooth interaction effects */
+  color: rgb(33, 37, 41); 
+  transition: all 0.3s ease; 
 }
 
 input:focus,
@@ -48,7 +46,7 @@ select:focus {
 
 input::placeholder,
 select::placeholder {
-  color: rgb(117, 117, 117); /* Softer placeholder color */
+  color: rgb(117, 117, 117); 
   text-align: center;
 }
 
@@ -68,16 +66,16 @@ select::placeholder {
 
 .submit-button:hover {
   background-color: rgba(0, 26, 255, 0.6);
-  transform: translateY(-2px); /* Subtle lift effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for better visual appeal */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Error Messages */
 .error-message {
   color: rgb(238, 80, 80);
-  font-size: 0.875rem; /* Slightly larger for readability */
+  font-size: 0.875rem; 
   margin-left: 10px;
-  font-style: italic; /* Emphasize the error message */
+  font-style: italic;
 }
 
 /* Utility Classes */
@@ -104,7 +102,7 @@ select::placeholder {
 
   input,
   select {
-    max-width: 100%; /* Ensure inputs fit smaller screens */
+    max-width: 100%; 
   }
 
   .submit-button {

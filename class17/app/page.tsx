@@ -2,7 +2,6 @@
 
 import Form from "./components/Form";
 
-// import Form from "./components/Form";
 
 function Home() {
 
